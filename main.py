@@ -136,7 +136,6 @@ class MenuPage(tk.Frame):
                                                               ("all files", "*.*")))
             if  text_file:
                 name = text_file
-                #name = name.replace("C:\\Users\\serpe\\PycharmProjects\\robapp","")
                 s3 = boto3.client('s3')
                 upload_file_bucket = 'mebucketrobert'
                 upload_file_key = 'S3_project/'+basename(name)
